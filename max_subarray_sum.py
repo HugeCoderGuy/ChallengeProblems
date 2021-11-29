@@ -14,8 +14,8 @@ is also a valid sublist/subarray.
 
 def max_sequence(arr):
     max_value = [0]
-    for i in range(0,len(arr)):
-        for j in range(i,len(arr)+1):
+    for i in range(0, len(arr)):
+        for j in range(i, len(arr)+1):
             current_sum = sum(arr[i:j])
             if current_sum > max_value[0]:
                 max_value[0] = current_sum
